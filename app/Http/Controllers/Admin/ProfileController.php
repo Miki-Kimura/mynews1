@@ -36,4 +36,14 @@ class ProfileController extends Controller
         $profile->save();
         return redirect('admin/profile/create');
     }
+    
+    public function edit()
+    {
+        //
+    }
+    
+    public function update()
+    {
+        //
+    }
 }
