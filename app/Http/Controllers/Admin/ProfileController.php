@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Profile;
 
 class ProfileController extends Controller
 {
@@ -21,7 +22,7 @@ class ProfileController extends Controller
         $form = $request->all();
 
         // formに画像があれば、保存する
-        if ($form['image']) {
+        if (isset($form['image'])) {
             $path = $request->file('image')->store('public/image');
             $profile->image_path = basename($path);
         } else {

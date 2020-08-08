@@ -41,9 +41,9 @@
                 
                     
                     <div class="form-group row">
-                        <label class="col-md-2">本文</label>
+                        <label class="col-md-2">自己紹介</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="body" rows="5">{{ old('body') }}</textarea>
+                            <textarea class="form-control" name="name" rows="5">{{ old('name') }}</textarea>
                         </div>
                     </div>
                     <div class="form-group row">
