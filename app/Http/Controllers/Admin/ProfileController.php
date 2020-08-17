@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Profile;
 
+use App\ProfileHistory;
+use Carbon\carbon;
+
 class ProfileController extends Controller
 {
     //
